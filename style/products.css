@@ -1,0 +1,24 @@
+.products .page-title {
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+.products .group-btns {
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+.products .group-btns .products-group-btn {
+  padding: 0.3rem 2rem;
+  margin: 0.3rem 5px !important;
+  word-wrap: none;
+  border: solid 1px rgb(106, 106, 106);
+  border-radius: 1em;
+  color: black;
+  transition: all 300ms ease-in-out;
+}
+.products .group-btns .products-group-btn.active {
+  background-color: rgba(247, 109, 18, 0.3) !important;
+}
+.products .group-btns .products-group-btn:hover {
+  color: white;
+  background-color: color-mix(in lch, #69b6a2, white calc(10% * var(--i)));
+}/*# sourceMappingURL=products.css.map */

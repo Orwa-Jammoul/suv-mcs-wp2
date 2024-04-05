@@ -1,0 +1,33 @@
+.login-page .left {
+  padding: 0 2rem;
+  border-right: solid 1px #668967;
+}
+.login-page .left .title {
+  margin-bottom: 1rem;
+  color: #668967;
+}
+.login-page .left .benefits {
+  font-weight: 100;
+  font-style: italic;
+}
+.login-page .left .login-form .input-item {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+}
+.login-page .right {
+  padding: 0 2rem;
+}
+.login-page .right .title {
+  margin-bottom: 1rem;
+  color: #668967;
+}
+.login-page .right .benefits {
+  font-weight: 100;
+  font-style: italic;
+}
+.login-page .right .sign-up-form .input-item {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+}/*# sourceMappingURL=login.css.map */

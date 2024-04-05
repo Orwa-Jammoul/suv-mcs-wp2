@@ -1,0 +1,148 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 6rem);
+  overflow: hidden;
+}
+.header .video-frame {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .video-frame source {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .info {
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+}
+.header .info .waviy {
+  position: relative;
+  mix-blend-mode: overlay;
+}
+.header .info .waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 3vw;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2.6s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
+.header .info .our-categories {
+  width: 40%;
+  height: 50%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.header .info .our-categories .cat {
+  height: 0;
+  width: 20%;
+  min-width: 3rem;
+  border-radius: 2.5rem;
+  border: solid 1px white;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+  animation: extand 1.2s cubic-bezier(1, 0.03, 0.58, 1.22) forwards;
+  animation-delay: calc(0.3s * var(--i) + 2.5s);
+}
+.header .info .our-categories .cat .img-frame {
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+.header .info .our-categories .cat .icon-frame {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: none;
+  transition: all 300ms ease-in-out;
+}
+.header .info .our-categories .cat .icon-frame img {
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: solid 1px white;
+}
+.header .info .our-categories .cat .icon-frame .title {
+  color: white !important;
+  min-height: 8rem;
+  text-transform: capitalize;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.header .info .our-categories .cat:hover {
+  width: min(9rem, 30%);
+}
+.header .info .our-categories .cat:hover .img-frame {
+  opacity: 1;
+}
+.header .info .our-categories .cat:hover .icon-frame {
+  box-shadow: inset 0px 0px 100px 20px rgba(0, 0, 0, 0.533);
+}
+@keyframes extand {
+  to {
+    height: 100%;
+  }
+}
+@media (max-width: 590px) {
+  .header .info .our-categories {
+    width: 60%;
+  }
+}
+.header .info .our-products-btn {
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  color: white;
+  background: none;
+  border: solid 1px white;
+  transition: all 300ms ease-in-out;
+}
+.header .info .our-products-btn:hover {
+  background: rgba(255, 255, 255, 0.685);
+  color: #000000;
+}
+
+.about-us {
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  margin: 2rem 0;
+}
+.about-us .title {
+  color: #668967;
+  font-weight: 100;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.about-us .des {
+  text-align: center;
+  padding: 0 3rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.best-offers-section, .latest-section {
+  margin: 2rem;
+}
+.best-offers-section .best-offers-cards, .latest-section .best-offers-cards {
+  margin: 2rem;
+}/*# sourceMappingURL=home.css.map */
