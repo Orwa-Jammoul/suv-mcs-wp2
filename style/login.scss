@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+.login-page{
+  
+  .left{
+    padding: 0 2rem ;
+    border-right: solid 1px $primary2;
+    .title{
+      margin-bottom: 1rem;
+      color: $primary2;
+    }
+    .benefits{
+      font-weight: 100;
+      font-style: italic;
+    }
+    .login-form{
+      // border: solid 1px black;
+      .input-item{
+        width: 100%;
+        margin: 1rem 0;
+        padding: .5rem 1rem;
+      }
+    }
+  
+  }
+  .right{
+    // border: solid 1px black;
+    padding: 0 2rem ;
+    .title{
+      margin-bottom: 1rem;
+      color: $primary2;
+    }
+    .benefits{
+      font-weight: 100;
+      font-style: italic;
+    }
+    .sign-up-form {
+      // border: solid 1px black;
+      .input-item{
+        width: 100%;
+        margin: 1rem 0;
+        padding: .5rem 1rem;
+      }
+    }
+  }
+}
+

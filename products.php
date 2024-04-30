@@ -29,8 +29,6 @@
   <?php echo navbar("products")  ?>
 
   <?php
-    // print_r($_GET);
-    // echo count($_GET);
     $group = '';
     if(count($_GET) !=0){
       $group = $_GET['group'];
@@ -53,8 +51,8 @@
         $sName= "Pants Category";
         $sProducts = productsByCategoryId(3);
         break;
-      case "shoses":
-        $sName= "Shoses Category";
+      case "shoes":
+        $sName= "Shoes Category";
         $sProducts = productsByCategoryId(4);
         break;
       case "latestProducts":
@@ -83,7 +81,7 @@
       <a class="products-group-btn <?php echo $group=='dresses'?'active':'' ?>" style="--i:2" href="./products.php?group=dresses">Dresses</a>
       <a class="products-group-btn <?php echo $group=='shirts'?'active':'' ?>" style="--i:3" href="./products.php?group=shirts">Shirts</a>
       <a class="products-group-btn <?php echo $group=='pants'?'active':'' ?>" style="--i:4" href="./products.php?group=pants">Pants</a>  
-      <a class="products-group-btn <?php echo $group=='shoses'?'active':'' ?>" style="--i:5" href="./products.php?group=shoses">Shose</a>
+      <a class="products-group-btn <?php echo $group=='shoes'?'active':'' ?>" style="--i:5" href="./products.php?group=shoes">Shoes</a>
       <a class="products-group-btn <?php echo $group=='latestProducts'?'active':'' ?>" style="--i:6" href="./products.php?group=latestProducts">Latest Products</a>
       <a class="products-group-btn <?php echo $group=='bestOffers'?'active':'' ?>" style="--i:7" href="./products.php?group=bestOffers">Best Offers</a>
     </div>
